@@ -2,80 +2,40 @@
 <html lang="en">
 
 <head>
+    <title>Cate Lowest Distance</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <meta charset="utf-8">
+
     <style>
         html,
         body {
             margin: 0;
             padding: 0;
+            text-align: center;
+        }
+
+        #sketch {
+            display: flex;
+            justify-content: center;
         }
 
         canvas {
             display: block;
         }
-
-        .container {
-            padding: 30px;
-        }
     </style>
-    <meta charset="utf-8">
 </head>
 
 <body>
-    <div class="container">
-        <h1>Cate Maps App</h1>
-        
-        <label for="start">Start:</label>
-        <select name="start" id="start">
-            <option value="0">25H</option>
-            <option value="1">Bothin</option>
-            <option value="2">Pars</option>
-            <option value="3">HH/Lido</option>
-            <option value="4">SH</option>
-            <option value="5">Savage</option>
-            <option value="6">LH</option>
-            <option value="7">CHW</option>
-            <option value="8">CHE</option>
-        </select>
+    <h1>Cate Distance App</h1>
 
-        <label for="end">End:</label>
-        <select name="end" id="end">
-            <option value="0">25H</option>
-            <option value="1">Bothin</option>
-            <option value="2">Pars</option>
-            <option value="3">HH/Lido</option>
-            <option value="4">SH</option>
-            <option value="5">Savage</option>
-            <option value="6">LH</option>
-            <option value="7">CHW</option>
-            <option value="8">CHE</option>
-        </select>
+    <p>Total Distance: <span id="totalDistance"></span></p>
 
-        <br />
-        <br />
-        <button onclick="getTravel()">submit</button>
-        <br />
-        <br />
-        <hr />
-        <br />
-        
-        <div id="instructions">
-            <div><strong>Distance</strong>: <span id="distance">0</span> meters</div>
-            <div><strong>Time</strong>: <span id="time">0</span> minutes</div>
-        </div>
-        <br />
-      <div id="canvasDiv"></div>
-      <hr />
-      <h4>Created by Jonathan Yoo</h4>
-       
-    </div>
-
+    <!-- SCRIPTS -->
     <script src="Node.js"></script>
     <script src="Graph.js"></script>
-    <script src="points.js"></script>
+    <script src="assets/points.js"></script>
     <script src="sketch.js"></script>
-
-
+    <div id="sketch"></div>
 </body>
 
 </html>
