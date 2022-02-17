@@ -19,7 +19,7 @@ function setup() {
     cnv = createCanvas(cate.width * factor, cate.height * factor);
     cnv.parent('sketch');
     
-    textSize(factor*30);
+    textSize(max(12, factor * 30));
 
     initGraph();
 }
@@ -216,4 +216,5 @@ function changeFactor() {
     else {
         factor = (windowWidth)/cate.width*7/8;
     }
+    console.log(factor);
 }

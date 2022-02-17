@@ -62,5 +62,6 @@ let points = [
 function getDistanceMeters(p0, p1) {
   let dis = dist(p0.x, p0.y, p1.x, p1.y);
   let metersPerPixel = 548.37 / 2234.64;
+  console.log(factor);
   return dis * metersPerPixel / factor;
 }
